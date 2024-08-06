@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Handle Buy Now button click
     function handleBuyNow() {
         localStorage.setItem('cart', JSON.stringify(cart));
-        window.location.href = 'PayNow.html';
+        window.location.href = 'payNow.html';
     }
 
     displayProducts(getProducts());
