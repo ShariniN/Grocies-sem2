@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Payment Form</title>
+    <link rel="stylesheet" href="css/form.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+      /* General stylings */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      /* Navigation bar */
+      nav {
+          display: flex;
+          height: 80px;
+          width: 100%;
+          background: #ffffff;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+
+      nav .logo {
+          width: 150px;
+      }
+
+      nav ul {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+      }
+
+      nav ul li {
+          margin: 0 5px;
+      }
+
+      nav ul li a {
+          color: #020202;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 8px 15px;
+          border-radius: 5px;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+      }
+
+      nav ul li a.active,
+      nav ul li a:hover {
+          color: #111;
+          background: linear-gradient(375deg, #1cc7d0, #2ede98);
+      }
+
+      nav .menu-btn i {
+          color: #fff;
+          font-size: 22px;
+          display: none;
+      }
+
+      input[type="checkbox"] {
+          display: none;
+      }
+
+      .dropbtn {
+          color: rgb(0, 0, 0);
+          border: none;
+          cursor: pointer;
+          background: white;
+          font-size: 18px;
+          font-weight: 500;
+          border-radius: 5px;
+          letter-spacing: 1px;
+          margin-top: -7%;
+      }
+
+      .buttons button:hover {
+          color: rgb(3, 3, 3);
+      }
+
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+
+      .dropbtn:hover {
+          background: linear-gradient(375deg, #1cc7d0, #2ede98);
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+      }
+
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+
+      .dropdown-content a:hover {
+          background: linear-gradient(375deg, #1cc7d0, #2ede98);
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .banner img {
+          position: relative;
+          width: 100%;
+          height: auto;
+          z-index: -2;
+      }
+
+      .search input {
+          padding: 10px;
+          width: auto;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-right: 10px;
+      }
+
+      .search button {
+          background: linear-gradient(375deg, #1cc7d0, #2ede98);
+          color: rgb(0, 0, 0);
+          padding: 10px 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      .search button:hover {
+          background: linear-gradient(375deg, #7eb9bc, #88cfb3);
+          color: rgb(3, 3, 3);
+      }
+
+      @media (max-width: 920px) {
+          .menu-btn {
+              display: block;
+              position: relative;
+              justify-self: center;
+          }
+
+          nav .menu-btn i {
+              display: block;
+              color: #020202;
+          }
+
+          #click:checked~.menu-btn i:before {
+              content: "\f00d";
+              color: #111;
+          }
+
+          nav .logo {
+              width: 120px;
+          }
+
+          nav ul {
+              position: absolute;
+              top: 80px;
+              left: -300%;
+              background: #ffffff;
+              height: 100vh;
+              display: block;
+              transition: all 0.3s ease;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              text-align: center;
+          }
+
+          #click:checked~ul {
+              left: 0;
+          }
+
+          nav ul li {
+              width: 100%;
+              margin: 10px 0;
+          }
+
+          nav ul li a {
+              width: 100%;
+              display: block;
+              font-size: 20px;
+          }
+
+          #click:checked~ul li a {
+              margin-left: 0px;
+          }
+
+          nav ul li a.active,
+          nav ul li a:hover {
+              background: none;
+              color: #1cc7d0
+          }
+
+          .dropdown-content {
+              display: block;
+              position: relative;
+              background-color: #ffffff;
+              box-shadow: none;
+              text-align: center;
+          }
+
+          .dropdown-content a:hover {
+              background: none;
+          }
+
+          .dropbtn:hover {
+              background: none;
+          }
+      }
+
+      .container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          background: white;
+          padding: 0px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .cart {
+          width: 60%;
+          margin-right: 20px;
+          padding: 20px;
+          background: #f9f9f9;
+          border-radius: 8px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .cart h2 {
+          margin-bottom: 20px;
+          font-size: 1.8em;
+          border-bottom: 2px solid #ccc;
+          padding-bottom: 10px;
+      }
+
+      .cart-content {
+          overflow-y: auto;
+          max-height: 300px;
+          margin-bottom: 20px;
+      }
+
+      .cart-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+          padding: 10px;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .cart-item img {
+          width: 100px;
+          height: 70px;
+          margin-right: 15px;
+          border-radius: 8px;
+      }
+
+      .cart-item div {
+          flex-grow: 1;
+      }
+
+      .cart-item h4,
+      .cart-item h5,
+      .cart-item p {
+          margin: 0;
+      }
+
+      .cart-item h5 {
+          margin: 5px 0;
+          color: #888;
+      }
+
+      .cart-total {
+          font-size: 1.4em;
+          font-weight: bold;
+          text-align: right;
+      }
+
+      .delivery-summary {
+          border-top: 1px solid #ccc;
+          margin-top: 20px;
+          padding-top: 10px;
+          padding: 20px;
+          background: #f1f1f1;
+          border-radius: 8px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .delivery-summary h3 {
+          margin-bottom: 15px;
+          font-size: 1.6em;
+      }
+
+      .delivery-summary p {
+          margin: 5px 0;
+      }
+
+      .form-container {
+          width: 40%;
+          padding: 20px;
+      }
+
+      .form-step {
+          display: none;
+      }
+
+      .form-step.active {
+          display: block;
+          animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+          from {
+              opacity: 0;
+              transform: translateY(20px);
+          }
+
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      .form-group {
+          margin-bottom: 15px;
+      }
+
+      .form-group label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+      }
+
+      .form-group input,
+      .form-group select {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus {
+          outline: none;
+          border-color: #1cc7d0;
+      }
+
+      .form-group .error {
+        color: red;
+        font-size: 0.9em;
+    }
+    
+    .form-navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .form-navigation button {
+        padding: 10px 20px;
+        border: none;
+        background: #28a745;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+      .success-animation {
+        display: none;
+        text-align: center;
+    }
+    
+    .checkmark {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: block;
+        stroke-width: 2;
+        stroke: #4bb71b;
+        stroke-miterlimit: 10;
+        box-shadow: inset 0px 0px 0px #4bb71b;
+        animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+        position: relative;
+        top: 5px;
+        right: 5px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .checkmark__circle {
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+        stroke: #4bb71b;
+        fill: #fff;
+        animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+    
+    .checkmark__check {
+        transform-origin: 50% 50%;
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    }
+    
+    @keyframes stroke {
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    @keyframes scale {
+        0%,
+        100% {
+            transform: none;
+        }
+        50% {
+            transform: scale3d(1.1, 1.1, 1);
+        }
+    }
+    
+    @keyframes fill {
+        100% {
+            box-shadow: inset 0px 0px 0px 30px #4bb71b;
+        }
+    }
+
+      @media (max-width: 1200px) {
+          .container {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          .cart,
+          .form-container {
+              width: 100%;
+              margin: 10px 0;
+          }
+
+          .cart {
+              order: 2;
+          }
+
+          .form-container {
+              order: 1;
+          }
+      }
+
+      @media (max-width: 600px) {
+          .cart-item img {
+              width: 80px;
+              height: 60px;
+          }
+
+          .cart-item div {
+              font-size: 14px;
+          }
+
+          .cart-total {
+              font-size: 1.2em;
+          }
+
+          .delivery-summary h3 {
+              font-size: 1.4em;
+          }
+
+          .form-group input,
+          .form-group select {
+              font-size: 14px;
+          }
+      }
+  </style>
+</head>
+
+<header>
+    <!--Navigation bar-->
+    <nav>
+      <div>
+        <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+        </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Aboutus.html">About Us</a></li>
+      <li><div class="dropdown">
+        <button class="dropbtn"><a href="Products.html">Products</a></button>
+        <div class="dropdown-content">
+          <a href="veg.html">Vegetables</a>
+          <a href="dairy.html">Dairy</a>
+          <a href="cosmetics.html">Cosmetics</a>
+        </div>
+      </div>
+    </div></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="loyalty.html">Loyalty Registration</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search your daily groceries" />
+      <button type="button">Search</button>
+    </div>
+  </nav>
+  <br>
+  <picture class="banner">
+    <source media="(max-width:600px)" srcset="veg.jpg" alt="Vegetable banner">
+    <img src="images/Pay Now!.jpg" alt="Vegetable banner">
+  </picture>
+  </header>
+  <br>
+
+<body>
+    <div class="container">
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-content"></div>
+            <div class="cart-total"></div>
+            <div class="delivery-summary" style="display:none;">
+                <h3>Shipping To</h3>
+                <p id="summary-name"></p>
+                <p id="summary-address"></p>
+                <p id="summary-email"></p>
+            </div>
+        </section>
+
+        <section class="form-container">
+            <form id="multiStepForm">
+                <div class="form-step active">
+                    <h2>Delivery Details</h2>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="John">
+                        <div class="error" id="firstNameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                        <div class="error" id="lastNameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+                        <div class="error" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required placeholder="1234 Elm St, Springfield, IL"></textarea>
+                        <div class="error" id="addressError"></div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" id="nextBtn">Next</button>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <h2>Payment Details</h2>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" required placeholder="1234-5678-1234-5678">
+                        <div class="error" id="cardNumberError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="month" id="expiryDate" name="expiryDate" required>
+                        <div class="error" id="expiryDateError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required placeholder="123">
+                        <div class="error" id="cvvError"></div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" id="prevBtn">Previous</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="success-animation" >
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+                <p id="deliveryDate"></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cartContent = document.querySelector(".cart-content");
+    const cartTotal = document.querySelector(".cart-total");
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const form = document.getElementById('multiStepForm');
+    const deliverySummary = document.querySelector('.delivery-summary');
+    const successAnimation = document.querySelector('.success-animation');
+    const steps = Array.from(document.querySelectorAll('.form-step'));
+    let currentStep = 0;
+
+    const displayCart = () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cartContent.innerHTML = "";
+        let total = 0;
+
+        cart.forEach(item => {
+            const div = document.createElement("div");
+            div.classList.add("cart-item");
+            div.innerHTML = `
+                <img src=${item.image} alt=${item.title}>
+                <div>
+                    <h4>${item.title}</h4>
+                    <h5>LKR ${item.price}</h5>
+                    <p>Quantity: ${item.amount}</p>
+                </div>
+            `;
+            cartContent.appendChild(div);
+            total += item.price * item.amount;
+        });
+
+        cartTotal.innerText = `Total: LKR ${total.toFixed(2)}`;
+    };
+
+    const showSummary = () => {
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const address = document.getElementById("address").value;
+
+        document.getElementById("summary-name").innerText = `${firstName} ${lastName}`;
+        document.getElementById("summary-address").innerText = address;
+        document.getElementById("summary-email").innerText = email;
+
+        deliverySummary.style.display = "block";
+    };
+
+    const changeStep = (increment) => {
+        steps[currentStep].classList.remove('active');
+        currentStep += increment;
+        steps[currentStep].classList.add('active');
+        if (currentStep === 1) showSummary();
+    };
+
+    nextBtn.addEventListener('click', () => {
+        if (validateStep()) {
+            changeStep(1);
+        }
+    });
+
+    prevBtn.addEventListener('click', () => changeStep(-1));
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (validateStep()) {
+            form.style.display = 'none';
+            successAnimation.style.display = 'block';
+            displayDeliveryDate();
+        }
+    });
+
+    const validateStep = () => {
+        if (currentStep === 0) {
+            let isValid = true;
+            const currentStepFields = steps[currentStep].querySelectorAll('input, textarea');
+
+            currentStepFields.forEach(field => {
+                const errorElement = document.getElementById(`${field.id}Error`);
+                const value = field.value.trim();
+                const validations = {
+                    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    cardNumber: /^\d{4}-\d{4}-\d{4}-\d{4}$/,
+                    cvv: /^\d{3,4}$/
+                };
+
+                if (!value) {
+                    isValid = false;
+                    errorElement.innerText = `${field.previousElementSibling.innerText} is required`;
+                } else if (validations[field.id] && !validations[field.id].test(value)) {
+                    isValid = false;
+                    errorElement.innerText = `Invalid ${field.previousElementSibling.innerText}`;
+                } else {
+                    errorElement.innerText = '';
+                }
+            });
+
+            return isValid;
+        } else {
+            return true;
+        }
+    };
+
+    const displayDeliveryDate = () => {
+        const deliveryDateElement = document.getElementById('deliveryDate');
+        const today = new Date();
+        const deliveryDate = new Date(today);
+        deliveryDate.setDate(today.getDate() + 2);
+
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        deliveryDateElement.innerText = `Estimated Delivery Date: ${deliveryDate.toLocaleDateString(undefined, options)}`;
+    };
+
+    displayCart();
+});
+    </script>
+</body>
+
+</html>

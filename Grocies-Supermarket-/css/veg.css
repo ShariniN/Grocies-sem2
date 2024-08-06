@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*General stylings*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/*Navigation bar*/ 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav .logo{
+  width: 150px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #020202;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: linear-gradient(375deg, #42bf42, #aef359);
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.dropbtn {
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  background: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  margin-top: -7%;
+}
+
+.buttons button:hover{
+  color:rgb(3, 3, 3); 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn:hover{
+  background: linear-gradient(375deg, #42bf42, #aef359);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: linear-gradient(375deg, #42bf42, #aef359);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.banner img {
+  position: relative;
+  width: 100%;
+  height: auto; 
+  z-index: -2;
+}
+
+.search input{
+  padding: 10px;
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search button {
+  background: linear-gradient(375deg, #42bf42, #aef359);
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search button:hover{
+  background: linear-gradient(375deg, #57fb57, #c1f77f); 
+  color:rgb(3, 3, 3);
+}
+
+@media (max-width: 920px) {
+  .menu-btn{
+    display: block;
+    position: relative;
+    justify-self: center;
+  }
+  nav .menu-btn i{
+    display: block;
+    color: #020202;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+    color: #111;
+  }
+
+  nav .logo{
+    width: 120px;
+  }
+
+  nav ul{
+    position: absolute;
+    top: 80px;
+    left: -300%;
+    background: #ffffff;
+    height: 100vh;
+    display: block;
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 10px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    display: block;
+    font-size: 20px;
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #1cc7d0
+  }
+
+  .dropdown-content {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: none;
+    text-align: center;
+  }
+  .dropdown-content a:hover{
+    background: none;
+  }
+  .dropbtn:hover{
+    background: none;
+  }
+}
+
+  /*Vegetable sources flex containers*/
+  h2{
+    background: linear-gradient(375deg, #57fb57, #c1f77f);
+    text-align: center;
+  }
+
+  .veg-heading{
+    text-align: center;
+  }
+  .branch-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  
+  .branch {
+    width: 32%; 
+    background-color: #fff;
+    box-shadow: 0 2px 5px #2f3030;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgb(0, 112, 1);
+  }
+  
+  .branch:hover {
+    box-shadow: 0 4px 8px rgb(1, 93, 21);  
+  }
+
+  .branch img {
+    width: 320px;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .branch-info {
+    margin-top: 15px;
+  }
+  
+  .branch-info h4 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  /*Vegetable products grid container*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(0, 112, 1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.2s ease-in-out;  
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgb(1, 93, 21);  
+  }
+  
+  .product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .product-info {
+    margin-top: 15px;
+  }
+  
+  .product-info h4 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  
+  .rating {
+    color: rgb(176, 174, 171);
+  }
+  
+  .rating .fa-star {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .rating .fa-star.checked {
+    color: gold;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .buttons button {
+      color: rgb(0, 0, 0);
+      padding: 10px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      background: linear-gradient(375deg, #42bf42, #aef359);
+    }
+  
+    .buttons button:hover{
+      color:rgb(3, 3, 3);
+      background: linear-gradient(375deg, #57fb57, #c1f77f);  
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    select {
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      background: linear-gradient(375deg, #42bf42, #aef359);
+    }
+    
+    /*Footer section*/
+    .footer {
+      position: absolute;
+      width: 100%;
+      background: linear-gradient(375deg, #42bf42, #aef359);
+      border-radius: 6px; 
+    }
+    
+    .footer .footer-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 3.5rem;
+      padding: 1%;
+    }
+    
+    .footer-row .footer-col h4 {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: black;
+    }
+    
+    .footer-col .links {
+      margin-top: 20px;
+    }
+    
+    .footer-col .links li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    
+    .footer-col .links li a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    .footer-col .links li a:hover {
+      color: #fff;
+    }
+    
+    .footer-col p {
+      margin: 20px 0;
+      color: black;
+      max-width: 300px;
+    }
+    
+    .footer-col form {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .footer-col input {
+      height: 40px;
+      border-radius: 6px;
+      background: none;
+      width: 100%;
+      outline: none;
+      border: 1px solid #7489C6 ;
+      color: black;
+      padding-left: 10px;
+    }
+    
+    .footer-col input::placeholder {
+      color: black;
+    }
+    
+     .footer-col form button {
+      background: #fff;
+      outline: none;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+    
+    .footer-col form button:hover {
+      background: #cecccc;
+    }
+    
+    .footer-col .icons {
+      display: flex;
+      margin-top: 30px;
+      gap: 30px;
+      cursor: pointer;
+    }
+    
+    .footer-col .icons a {
+      color: black;
+      text-decoration: none;
+    }
+    
+    .footer-col .icons a:hover  {
+      color: #fff;
+    }
+    
+    .bottom-details .bottom_text {
+      color: rgb(0, 0, 0);
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    /*Media queries*/
+    @media only screen and (max-width: 768px) {
+      .product-card, .branch
+      {
+        width: 100%;
+      }
+      .grid-container, .branch-container{
+        display: block;
+      }
+      .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+      }
+    
+      .footer .footer-row {
+        padding: 20px;
+        gap: 1rem;
+      }
+    
+      .footer-col form {
+        display: block;
+      }
+    
+      .footer-col form :where(input, button) {
+        width: 100%;
+      }
+    
+      .footer-col form button {
+        margin: 10px 0 0 0;
+      }
+    }
+    @media (max-width:400px){
+      .search input{
+        padding: 10px;
+        width: 120px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 2px;
+      }
+    }

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Supermarket, groceries, fresh, produce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+<header>
+<!--Navigation bar-->
+  <nav>
+    <div>
+      <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="Aboutus.html">About Us</a></li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="Products.html">Products</a></button>
+          <div class="dropdown-content">
+            <a href="veg.html">Vegetables</a>
+            <a href="dairy.html">Dairy</a>
+            <a href="cosmetics.html">Cosmetics</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="loyalty.html">Loyalty Registration</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search your daily groceries">
+      <button type="button">Search</button>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="wrapper">
+      <img src="images/homebanner.png" alt="Home Banner">
+      <img src="images/vegesale.jpg" alt="Vegetables Sale">
+      <img src="images/makeupsale.jpg" alt="Makeup Sale">
+      <img src="images/cheesesale.jpg" alt="Cheese Sale">
+    </div>
+  </div>
+</header>
+<main>
+  <!--Introduction content to the supermarket-->
+  <section class="aboutus">
+    <div class="about">
+      <img src="images/Introhome.jpg" class="pic" alt="Shopping online at grocies">
+      <div class="text">
+        <h2>Welcome to Grocies!</h2>
+        <h5>Your one-stop destination for all your<span> grocery needs!</span></h5>
+        <p>At Grocies, we pride ourselves on offering a wide selection of high-quality products at affordable prices. Whether you're stocking up on pantry essentials, picking out fresh produce, or exploring our diverse range of international foods, we've got everything you need to fill your kitchen with delicious meals and snacks. <br><br>
+          With convenient online ordering and fast delivery options, shopping for groceries has never been easier. Join us at Grocies and experience the convenience of stress-free shopping for yourself!</p>
+        <div class="box">
+          <a class="button" href="#popup1">Login/Signup</a>
+        </div>
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <form action="#" name="login/signup">
+              <h2>Login</h2>
+              <div class="input-field">
+                <input type="text" required>
+                <label>Enter your email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" required>
+                <label>Enter your password</label>
+              </div>
+              <div class="forget">
+                <label for="remember">
+                  <input type="checkbox" id="remember">
+                  <p>Remember me</p>
+                </label>
+                <a href="#">Forgot password?</a>
+              </div>
+              <button type="submit">Log In</button>
+              <div class="register">
+                <p>Don't have an account? <a href="#">Register</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about2">
+    <img src="images/supermarket-workers-collection-concept_52683-37013.avif" class="pic2" alt="Our team of workers">
+    <div class="text">
+      <h2>Who we are</h2>
+      <p>At Grocies Supermarket, we're more than just a grocery store; we're a community hub dedicated to serving our customers with care and integrity. With years of experience in the industry, our team is committed to providing exceptional service and building lasting relationships with our customers. <br><br>
+        As a locally-owned and operated business, we take pride in supporting our community by sourcing products from local farmers and producers whenever possible. Our mission is to create a welcoming and inclusive environment where everyone feels valued and appreciated. Whether you're a regular shopper or stopping by for the first time, we look forward to welcoming you to the Grocies family!</p>
+    </div>
+  </section>
+  <section>
+    <div class="about">
+      <img src="images/para2 img.jpg" class="pic" alt="Our produce">
+      <div class="text">
+        <h2>Our Products!</h2>
+        <h5>Your one-stop destination for all your<span> grocery needs!</span></h5>
+        <p>At Grocies Supermarket, we offer a diverse range of products to meet all your shopping needs. Here's a glimpse of what you'll find on our shelves:</p>
+        <ul>
+          <li>Fresh Produce: From crisp, seasonal fruits to vibrant vegetables, stocked with the finest selections to help you create delicious and nutritious meals.</li>
+          <li>Dairy Section: Indulge in creamy delights and farm-fresh goodness at our dairy section. From rich cheeses to wholesome milk, we've got all your dairy needs covered.</li>
+          <li>Health and Wellness: We prioritize your health and well-being by offering a selection of organic, natural, and gluten-free products, as well as vitamins, supplements, and personal care items.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="about2">
+      <img src="images/loyalty.avif" class="pic2" alt="Our loyalty program">
+      <div class="text">
+        <h2>Loyalty Scheme</h2>
+        <p>Join the Grocies Supermarket Loyalty Program and start earning rewards with every purchase! As a member, you'll enjoy exclusive perks, including special discounts, personalized offers, and members-only promotions.</p>
+        <p>Simply sign up for free at any of our store locations or online, and start collecting points every time you shop. Redeem your points for discounts on future purchases, or use them to unlock exciting rewards. Plus, stay updated on the latest deals and events with our loyalty program newsletter. Join today and experience the benefits of being a valued member of the Grocies Supermarket community!</p>
+      </div>
+    </div>
+  </section>
+</main>
+<!--Footer section-->
+<footer>
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About us</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Grocies</h4>
+        <p>Grocies Supermarket offers a diverse range of high-quality products, from fresh produce to household essentials, providing customers with a convenient and enjoyable shopping experience.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <a href="https://www.facebook.com/" class="fa fa-facebook" title="facebook logo" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram" title="instagram logo" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter" title="twitter logo" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://www.linkedin.com/" class="fa fa-linkedin" title="linkedin logo" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <p>Copyright © 2024 Grocies. All rights reserved</p>
+      </div>
+    </div>
+  </section>
+</footer>
+</body>
+</html>
