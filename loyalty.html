@@ -1,0 +1,209 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="loyalty,Supermarket,loyalty Registration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Registration</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/loyalty.css">
+</head>
+<body>
+<header>
+  <!--Navigation bar-->
+  <nav>
+    <div>
+      <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+      </div>
+  <input type="checkbox" id="click">
+  <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Aboutus.html">About Us</a></li>
+    <li><div class="dropdown">
+      <button class="dropbtn"><a href="Products.html">Products</a></button>
+      <div class="dropdown-content">
+        <a href="veg.html">Vegetables</a>
+        <a href="dairy.html">Dairy</a>
+        <a href="cosmetics.html">Cosmetics</a>
+      </div>
+    </div>
+  </div></li>
+    <li><a href="orders.html">Orders</a></li>
+    <li><a class="active" href="loyalty.html">Loyalty Registration</a></li>
+  </ul>
+  <div class="search">
+    <input type="text" placeholder="Search your daily groceries" />
+    <button type="button">Search</button>
+  </div>
+</nav>
+<br>
+<picture class="banner">
+  <source media="(max-width:600px)" srcset="loyalty.jpg" alt="Loyalty banner">
+  <img src="images/loyalty.jpg" alt="Loyalty banner">
+</picture>
+  <br><br>
+</header>
+<main>
+<!--Loyalty program information-->
+  <div class="loyalty-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/1.jpg" alt="">
+        </div>
+        <div class="flip-card-back">
+        <h2>Everyday Essentials</h2>
+      <ul class="content">
+        <li><i class="fas fa-check"></i>Earn basic points on all purchases.</li>
+        <li><i class="fas fa-check"></i>Access to weekly flyers and promotions.</li>
+        <li><i class="fas fa-check"></i>Receive personalized coupons based on recent purchases. </li>
+        <li><i class="fas fa-check"></i>Ability to participate in store surveys and feedback programs.</li>
+      </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/2.jpg" alt="">
+        </div>
+        <div class="flip-card-back">
+          <h2>Foodie Family</h2>
+        <ul class="content">
+          <li><i class="fas fa-check"></i>Earn bonus points on specific categories </li>
+          <li><i class="fas fa-check"></i>Unlock exclusive discounts on family-sized products and meal kits.</li>
+          <li><i class="fas fa-check"></i>Early access to new product launches and in-store events.</li>
+          <li><i class="fas fa-check"></i>Priority customer service with dedicated checkout lanes or express service options.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="flip-card-back">
+          <h2>Gourmet Club</h2>
+        <ul class="content">
+          <li><i class="fas fa-check"></i>Highest points multiplier on all purchases.</li>
+          <li><i class="fas fa-check"></i>Personalized shopping experience with dedicated staff recommendations.</li>
+          <li><i class="fas fa-check"></i>Free delivery or grocery pick-up services.</li>
+          <li><i class="fas fa-check"></i>Exclusive access to premium products and gourmet food selections.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Loyalty Registration form-->
+  <div class="container">
+    <div class="d-flex">
+      <form action="" method="">
+        <label for="fname">First Name</label>
+          <input type="text" name="fname">
+          <br>
+        <label for="lname">Last Name </label>
+          <input type="text" name="lname">
+          <br>
+        <label for="birthday">Date of Birth</label>
+          <input type="date" name="birthday" id="">
+          <br>
+        <label for="phone">Phone</label>
+          <input type="tel" name="phone"> 
+          <br>
+        <label for="email">Email</label>
+          <input type="email" name="email"> 
+          <br>
+        <label for="location">Frequently visted Location</label>
+        <select name="location" id="location">
+          <option value="colombo">Colombo</option>
+          <option value="galle">Galle</option>
+          <option value="nuwara">Nuwara Eliya</option>
+        </select>
+        <label for="loyalty">Loyalty Package</label>
+        <select name="loyalty" id="loyalty">
+          <option value="colombo">Everyday Essentials</option>
+          <option value="galle">Foodie Family</option>
+          <option value="nuwara">Gourmet Club</option>
+        </select>
+        <label for="newsletter">Would you like to recieve news/promotions</label>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="news-checkbox"></label>
+        <select name="news-checkbox" id="news-checkbox">
+          <option value="colombo">Via SMS</option>
+          <option value="galle">Via E-mail</option>
+        </select>
+        <label for="T&C">Agree to our Terms & Conditions</label>
+        <input type="checkbox" name="T&C" id="T&C" required>
+        <br>
+        <button type="submit" class="placeorder-btn">Register</button>
+      </form>
+    </div>
+  </div>
+</main>
+<!--Footer section-->
+<footer>
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About us</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Grocies</h4>
+        <p class="links">
+          Grocies Supermarket offers a diverse range of high-quality products, from fresh produce to household essentials, providing customers with a convenient and enjoyable shopping experience.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <a href="https://www.facebook.com/"  class="fa fa-facebook" title="facebook logo"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" title="instagram logo"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter" title="twitter logo"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin" title="linkedin logo"></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <p>Copyright © 2024 Grocies. All rights reserved</p>
+      </div>
+    </div>
+  </section>
+
+  <!--References
+  www.w3schools.com. (n.d.). How To Create a Flip Card with CSS. [online] Available at: https://www.w3schools.com/howto/howto_css_flip_card.asp.  
+  Image References
+  www.stockfood.co.uk. (n.d.). Family with shopping trolley at … – License Images – 270413 ❘ StockFood. [online] Available at: https://www.stockfood.co.uk/images/00270413-Family-with-shopping-trolley-at-vegetable-counter-in-supermarket [Accessed 20 May 2024].
+  Canva (2024). Canva. [online] Canva. Available at: https://www.canva.com/.  -->
+</footer>
+</body>
+</html>

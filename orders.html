@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>Order Page</title>
+    <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <div>
+                <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="Products.html">Products</a></button>
+                        <div class="dropdown-content">
+                            <a href="veg.html">Vegetables</a>
+                            <a href="dairy.html">Dairy</a>
+                            <a href="cosmetics.html">Cosmetics</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="active" href="orders.html">Orders</a></li>
+                <li><a href="loyalty.html">Loyalty Registration</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search your daily groceries" />
+                <button type="button">Search</button>
+            </div>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items"></div>
+            </div>
+        </nav>
+        <br>
+        <picture class="banner">
+            <source media="(max-width:600px)" srcset="about.jpg" alt="About us banner">
+            <img src="images/orders.jpg" alt="About us banner">
+        </picture>
+    </header>
+
+    <!-- Product Sections -->
+    <section class="products">
+        <div class="products-center">
+            <!-- Fruits Section -->
+            <div class="product-section-fruits">
+                <h2>Fruits</h2>
+                <div class="product-grid fruits-grid"></div>
+            </div>
+            <!-- Vegetables Section -->
+            <div class="product-section-vegetables">
+                <h2>Vegetables</h2>
+                <div class="product-grid vegetables-grid"></div>
+            </div>
+            <!-- Meat & Seafood Section -->
+            <div class="product-section-meat">
+                <h2>Meat & Seafood</h2>
+                <div class="product-grid meat-grid"></div>
+            </div>
+            <!-- Dairy Produce Section -->
+            <div class="product-section-dairy">
+                <h2>Dairy Produce</h2>
+                <div class="product-grid dairy-grid"></div>
+            </div>
+            <!-- Baking & Cooking Ingredients Section -->
+            <div class="product-section-baking">
+                <h2>Baking & Cooking Ingredients</h2>
+                <div class="product-grid baking-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fa fa-window-close"></i>
+            </span>
+            <h2>Your Cart</h2>
+            <div class="cart-content"></div>
+            <div class="cart-footer">
+                <h3>Your total: LKR <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">Clear Cart</button>
+                <button class="add-fav-btn">Add to Favourites</button>
+                <button class="apply-fav-btn">Apply Favourites</button>
+                <button class="buy-now-btn banner-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div class="popup-message"></div>
+
+  <!--Footer section-->
+  <footer>
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutus.html">About us</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="loyalty.html">Loyalty Registration</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Grocies</h4>
+          <p class="links">
+            Grocies Supermarket offers a diverse range of high-quality products, from fresh produce to household essentials, providing customers with a convenient and enjoyable shopping experience.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter for a weekly dose
+            of news, updates, helpful tips, and
+            exclusive offers.
+          </p>
+          <form action="#">
+            <input type="text" placeholder="Your email" required>
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+          <div class="icons">
+            <a href="https://www.facebook.com/"  class="fa fa-facebook" title="facebook logo"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" title="instagram logo"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter" title="twitter logo"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin" title="linkedin logo"></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <p>Copyright © 2024 Grocies. All rights reserved</p>
+        </div>
+      </div>
+    </section>
+</footer>
+<script src="orders.js"></script>
+</body>
+</html>
