@@ -44,7 +44,7 @@
       <li><a href="loyalty.html">Loyalty Registration</a></li>
     </ul>
     <div class="search">
-      <input type="text" placeholder="Search your daily groceries">
+      <input type="text" placeholder="Search your daily groceries" aria-label="Search">
       <button type="button">Search</button>
     </div>
   </nav>
@@ -61,7 +61,7 @@
   <!--Introduction content to the supermarket-->
   <section class="aboutus">
     <div class="about">
-      <img src="images/Introhome.jpg" class="pic" alt="Shopping online at grocies">
+      <img src="images/Introhome.jpg" class="pic" alt="Shopping online at Grocies">
       <div class="text">
         <h2>Welcome to Grocies!</h2>
         <h5>Your one-stop destination for all your<span> grocery needs!</span></h5>
@@ -76,16 +76,16 @@
             <form action="#" name="login/signup">
               <h2>Login</h2>
               <div class="input-field">
-                <input type="text" required>
-                <label>Enter your email</label>
+                <label for="email">Enter your email</label>
+                <input type="text" id="email" name="email" required>
               </div>
               <div class="input-field">
-                <input type="password" required>
-                <label>Enter your password</label>
+                <label for="password">Enter your password</label>
+                <input type="password" id="password" name="password" required>
               </div>
               <div class="forget">
                 <label for="remember">
-                  <input type="checkbox" id="remember">
+                  <input type="checkbox" id="remember" name="remember">
                   <span>Remember me</span> 
                 </label>
                 <a href="#">Forgot password?</a>
@@ -156,7 +156,8 @@
         <h4>Newsletter</h4>
         <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
         <form action="#">
-          <input type="text" placeholder="Your email" required>
+          <label for="newsletter-email">Your email</label>
+          <input type="text" id="newsletter-email" name="newsletter-email" placeholder="Your email" required>
           <button type="submit">SUBSCRIBE</button>
         </form>
         <div class="icons">
