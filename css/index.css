@@ -306,7 +306,7 @@ input[type="checkbox"]{
     .text{
       width: 540px;
     }
-    .text h2{
+    .text h2, h1{
       font-size: 45px;
       font-weight: 600;
       margin-bottom: 2px;
