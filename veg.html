@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="vegetables,Supermarket,groceries,Grocies,fresh">
     <title>Vegetables</title>
@@ -16,379 +16,315 @@
     <link rel="stylesheet" href="css/veg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
+</head>
+<body>
     <header>
     <!--Navigation bar-->
     <nav>
-      <div>
-        <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+        <div>
+            <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
         </div>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Aboutus.html">About Us</a></li>
-      <li><div class="dropdown">
-        <a class="active" class="dropbtn" href="Products.html">Products</a>
-        <div class="dropdown-content">
-          <a href="veg.html">Vegetables</a>
-          <a href="dairy.html">Dairy</a>
-          <a href="cosmetics.html">Cosmetics</a>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="active" class="dropbtn" href="Products.html">Products</a>
+                    <div class="dropdown-content">
+                        <a href="veg.html">Vegetables</a>
+                        <a href="dairy.html">Dairy</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search your daily groceries">
+            <button type="button">Search</button>
         </div>
-      </div>
-      <li><a href="orders.html">Orders</a></li>
-      <li><a href="loyalty.html">Loyalty Registration</a></li>
-    </ul>
-    <div class="search">
-      <input type="text" placeholder="Search your daily groceries">
-      <button type="button">Search</button>
+    </nav>
+    <br>
+    <picture class="banner">
+        <source media="(max-width:600px)" srcset="veg.jpg">
+        <img src="images/fruitsveges.jpg" alt="Vegetable banner">
+    </picture>
+    </header>
+    <br>
+
+    <main>
+    <!--Vegetables sources-->
+    <h2>Where our vegetables are sourced from?</h2>
+    <div class="branch-container">
+        <div class="branch">
+            <img src="images/veg/local.jfif" alt="Local Farmers produce">
+            <div class="branch-info">
+                <h4>Local Farmers</h4>
+                <span class="content">Dive into the freshest flavors our region has to offer! We proudly partner with local farmers to bring you the highest-quality produce. From vine-ripened tomatoes bursting with sunshine to crisp lettuces just harvested this morning, experience the taste of the season and the chance to support our incredible agricultural community with every purchase.</span>
+            </div>
+        </div>
+
+        <div class="branch">
+            <img src="images/veg/GAP.webp" alt="Good Agricultural Practice produce">
+            <div class="branch-info">
+                <h4>Good Agricultural Practice</h4>
+                <span class="content">Looking for the freshest, most flavorful produce? Look no further! We're proud to offer a vibrant selection of fruits and vegetables sourced from farms committed to Good Agricultural Practices (GAP). These responsible growers prioritize healthy soil, minimize environmental impact, and ensure safe handling, bringing you the best nature has to offer with peace of mind. Nourish yourself and the planet with every delicious bite!</span>
+            </div>
+        </div>
+
+        <div class="branch">
+            <img src="images/veg/organic.jpg" alt="Organic produce">
+            <div class="branch-info">
+                <h4>Organic</h4>
+                <span class="content">Looking for produce that's bursting with flavor and grown with the environment in mind? Look no further! We're proud to offer a vibrant selection of fruits and vegetables sourced directly from certified organic farms. These farms prioritize natural methods, nurturing their crops without synthetic pesticides or fertilizers. The result? Produce that's not only delicious but also good for you and the planet.</span>
+            </div>
+        </div>
     </div>
-  </nav>
-  <br>
-  <picture class="banner">
-    <source media="(max-width:600px)" srcset="veg.jpg">
-    <img src="images/fruitsveges.jpg" alt="Vegetable banner">
-  </picture>
-  </header>
-  <br>
+    <!--Vegetable products-->
+    <br><br>
+    <h2>Vegetables</h2>
+    <br><br>
+    <div class="grid-container">
+        <div class="product-card">
+            <img src="images/veg/Brinjal.jpg" alt="Brinjal">
+            <div class="product-info">
+                <h4>Brinjal</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 350</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown1"></label>
+                        <select id="myDropdown1">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <main>
-  <!--Vegetables sources-->
-  <h2>Where our vegetables are sourced from?</h2>
-  <div class="branch-container">
-    <div class="branch">
-      <img src="images/veg/local.jfif" alt="Product Image">
-      <div class="branch-info">
-        <h4>Local Farmers</h4>
-        <span class="content">Dive into the freshest flavors our region has to offer! We proudly partner with local farmers to bring you the highest-quality produce. From vine-ripened tomatoes bursting with sunshine to crisp lettuces just harvested this morning, experience the taste of the season and the chance to support our incredible agricultural community with every purchase.</span>
-      </div>
+        <div class="product-card">
+            <img src="images/veg/bitter-gourd.jpeg" alt="Bitter Gourd">
+            <div class="product-info">
+                <h4>Bitter Gourd</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 220</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown2"></label>
+                        <select id="myDropdown2">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/veg/carrot.jpg" alt="Carrot">
+            <div class="product-info">
+                <h4>Carrot</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 260</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown3"></label>
+                        <select id="myDropdown3">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/veg/cauliflower.jpg" alt="Cauliflower">
+            <div class="product-info">
+                <h4>Cauliflower</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 470</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown4"></label>
+                        <select id="myDropdown4">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/veg/cucumber.jpg" alt="Cucumber">
+            <div class="product-info">
+                <h4>Cucumber</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 320</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown5"></label>
+                        <select id="myDropdown5">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/veg/pumpkin.jpg" alt="Pumpkin">
+            <div class="product-info">
+                <h4>Pumpkin</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 340</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown6"></label>
+                        <select id="myDropdown6">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/veg/potato.jpg" alt="Potato">
+            <div class="product-info">
+                <h4>Potato</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 340</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown7"></label>
+                        <select id="myDropdown7">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/veg/ladiesfinger.jpg" alt="Ladies Finger">
+            <div class="product-info">
+                <h4>Ladies Finger</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 225</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown8"></label>
+                        <select id="myDropdown8">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/veg/onion.jpg" alt="Onion">
+            <div class="product-info">
+                <h4>Onion</h4>
+                <p class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p class="price">LKR 180</p>
+                <div class="buttons">
+                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="dropdown">
+                        <label for="myDropdown9"></label>
+                        <select id="myDropdown9">
+                            <option>100g</option>
+                            <option>500g</option>
+                            <option>1 kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="branch">
-      <img src="images/veg/GAP.webp" alt="Product Image">
-      <div class="branch-info">
-        <h4>Good agricultural practise </h4>
-        <span class="content">Looking for the freshest, most flavorful produce? Look no further! We're proud to offer a vibrant selection of fruits and vegetables sourced from farms committed to Good Agricultural Practices (GAP). These responsible growers prioritize healthy soil, minimize environmental impact, and ensure safe handling, bringing you the best nature has to offer with peace of mind. Nourish yourself and the planet with every delicious bite!</span>
-      </div>
-    </div>
-
-    <div class="branch">
-      <img src="images/veg/organic.jpg" alt="Product Image">
-      <div class="branch-info">
-        <h4>Organic</h4>
-        <span class="content">Looking for produce that's bursting with flavor and grown with the environment in mind? Look no further! We're proud to offer a vibrant selection of fruits and vegetables sourced directly from certified organic farms. These farms prioritize natural methods, nurturing their crops without synthetic pesticides or fertilizers. The result? Produce that's not only delicious but also good for you and the planet.</span>
-      </div>
-    </div>
-    </div>
-  <!--Vegetable products-->
-  <br><br>
-  <h2>Vegetables</h2>
-  <br><br>
-  <div class="grid-container">
-    <div class="product-card">
-      <img src="images/veg/Brinjal.jpg" alt="Product Image">
-      <div class="product-info">
-        <h4>Brinjal</h4>
-        <p class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-        <p class="price">LKR 350</p>
-        <div class="buttons">
-          <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-          <div class="dropdown">
-            <select id="myDropdown1">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <div class="product-card">
-        <img src="images/veg/bitter-gourd.jpeg" alt="Product Image">
-        <div class="product-info">
-          <h4>Bitter Gourd</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 220</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown2">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/carrot.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Carrot</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 260</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown3">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/cauliflower.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Cauliflower</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 470</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown4">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/cucumber.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Cucumber</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 320</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown5">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/pumpkin.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Pumpkin</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 340</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown6">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/potato.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Potato</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 340</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown7">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/ladiesfinger.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Ladies Finger</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 225</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown8">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/onion.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Onion</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 180</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown9">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-          </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="product-card">
-        <img src="images/veg/tomato.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Tomato</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 280</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown10">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/cabbage.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Cabbage</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 225</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown11">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="images/veg/beetroot.jpg" alt="Product Image">
-        <div class="product-info">
-          <h4>Beetroot</h4>
-          <p class="rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </p>
-          <p class="price">LKR 325</p>
-          <div class="buttons">
-            <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-             <div class="dropdown">
-            <select id="myDropdown12">
-              <option>100g</option>
-              <option >500g</option>
-              <option>1 kg</option>
-            </select>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-</main>
+    </main>
   <!--Footer section-->
   <footer>
     <section class="footer">
@@ -421,10 +357,10 @@
             <button type="submit">SUBSCRIBE</button>
           </form>
           <div class="icons">
-            <a href="https://www.facebook.com/"  class="fa fa-facebook" title="facebook logo"></a>
-            <a href="https://www.instagram.com/" class="fa fa-instagram" title="instagram logo"></a>
-            <a href="https://twitter.com/" class="fa fa-twitter" title="twitter logo"></a>
-            <a href="https://www.linkedin.com/" class="fa fa-linkedin" title="linkedin logo"></a>
+            <a href="https://www.facebook.com/"  class="fa fa-facebook" aria-label="Follow us on Facebook" title="facebook logo"></a>
+              <a href="https://www.instagram.com/" class="fa fa-instagram" aria-label="Follow us on Instagram" title="instagram logo"></a>
+              <a href="https://twitter.com/" class="fa fa-twitter" aria-label="Follow us on Twitter" title="twitter logo"></a>
+              <a href="https://www.linkedin.com/" class="fa fa-linkedin" aria-label="Follow us on Linkedin" title="linkedin logo"></a>
           </div>
         </div>
       </div>

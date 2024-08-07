@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a Groceries website">
-    <meta name="keywords" content="Supermarket,Grocies,Payment">
+    <meta name="keywords" content="Supermarket, Groceries, Payment">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -16,77 +16,80 @@
 </head>
 <body>
 <header>
-    <!--Navigation bar-->
+    <!-- Navigation bar -->
     <nav>
-      <div>
-        <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+        <div>
+            <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
         </div>
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Aboutus.html">About Us</a></li>
-      <li><div class="dropdown">
-        <a class="dropbtn" href="Products.html">Products</a>
-        <div class="dropdown-content">
-          <a href="veg.html">Vegetables</a>
-          <a href="dairy.html">Dairy</a>
-          <a href="cosmetics.html">Cosmetics</a>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+            <span class="sr-only">Menu</span>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="Products.html">Products</a>
+                    <div class="dropdown-content">
+                        <a href="veg.html">Vegetables</a>
+                        <a href="dairy.html">Dairy</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search your daily groceries">
+            <button type="button">Search</button>
         </div>
-      </div>
-      <li><a href="orders.html">Orders</a></li>
-      <li><a href="loyalty.html">Loyalty Registration</a></li>
-    </ul>
-    <div class="search">
-      <input type="text" placeholder="Search your daily groceries">
-      <button type="button">Search</button>
-    </div>
-  </nav>
-  <br>
-  <picture class="banner">
-    <img src="images/PayNow!.jpg" alt="Pay now banner">
-  </picture>
-  </header>
-  <main>
-  <br>
+    </nav>
+    <br>
+    <picture class="banner">
+        <img src="images/PayNow!.jpg" alt="Pay now banner with payment instructions">
+    </picture>
+</header>
+<main>
+    <br>
     <div class="container">
         <section class="cart">
             <h2>Your Cart</h2>
-            <div class="cart-content"></div>
-            <div class="cart-total"></div>
+            <div class="cart-content" aria-live="polite"></div>
+            <div class="cart-total" aria-live="polite"></div>
             <div class="delivery-summary" style="display:none;">
                 <h3>Shipping To</h3>
-                <p id="summary-name"></p>
-                <p id="summary-address"></p>
-                <p id="summary-email"></p>
+                <p id="summary-name" aria-live="polite"></p>
+                <p id="summary-address" aria-live="polite"></p>
+                <p id="summary-email" aria-live="polite"></p>
             </div>
         </section>
 
         <section class="form-container">
-            <form id="multiStepForm">
-                <div class="form-step active">
+            <form id="multiStepForm" aria-labelledby="formTitle">
+                <div class="form-step active" id="formTitle">
                     <h2>Delivery Details</h2>
                     <div class="form-group">
                         <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" required placeholder="John">
-                        <div class="error" id="firstNameError"></div>
+                        <div class="error" id="firstNameError" aria-live="assertive"></div>
                     </div>
                     <div class="form-group">
                         <label for="lastName">Last Name</label>
                         <input type="text" id="lastName" name="lastName" required placeholder="Doe">
-                        <div class="error" id="lastNameError"></div>
+                        <div class="error" id="lastNameError" aria-live="assertive"></div>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
-                        <div class="error" id="emailError"></div>
+                        <div class="error" id="emailError" aria-live="assertive"></div>
                     </div>
                     <div class="form-group">
                         <label for="address">Address</label>
                         <textarea id="address" name="address" rows="4" required placeholder="1234 Elm St, Springfield, IL"></textarea>
-                        <div class="error" id="addressError"></div>
+                        <div class="error" id="addressError" aria-live="assertive"></div>
                     </div>
                     <div class="form-navigation">
                         <button type="button" id="nextBtn">Next</button>
@@ -95,19 +98,19 @@
                 <div class="form-step">
                     <h2>Payment Details</h2>
                     <div class="form-group">
-                        <label for="cardNumber">Card umber</label>
+                        <label for="cardNumber">Card Number</label>
                         <input type="text" id="cardNumber" name="cardNumber" required placeholder="1234-5678-1234-5678">
-                        <div class="error" id="cardNumberError"></div>
+                        <div class="error" id="cardNumberError" aria-live="assertive"></div>
                     </div>
                     <div class="form-group">
                         <label for="expiryDate">Expiry Date</label>
                         <input type="month" id="expiryDate" name="expiryDate" required>
-                        <div class="error" id="expiryDateError"></div>
+                        <div class="error" id="expiryDateError" aria-live="assertive"></div>
                     </div>
                     <div class="form-group">
                         <label for="cvv">CVV</label>
                         <input type="text" id="cvv" name="cvv" required placeholder="123">
-                        <div class="error" id="cvvError"></div>
+                        <div class="error" id="cvvError" aria-live="assertive"></div>
                     </div>
                     <div class="form-navigation">
                         <button type="button" id="prevBtn">Previous</button>
@@ -115,12 +118,12 @@
                     </div>
                 </div>
             </form>
-            <div class="success-animation" >
-                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <div class="success-animation">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" aria-hidden="true">
                     <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
                     <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                 </svg>
-                <p id="deliveryDate"></p>
+                <p id="deliveryDate" aria-live="polite"></p>
             </div>
         </section>
     </div>
