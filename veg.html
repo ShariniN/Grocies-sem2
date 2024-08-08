@@ -27,13 +27,14 @@
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
+            <span class="sr-only">Menu</span>
         </label>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="Aboutus.html">About Us</a></li>
             <li>
                 <div class="dropdown">
-                    <a class="active" class="dropbtn" href="Products.html">Products</a>
+                    <a class="dropbtn" href="Products.html">Products</a>
                     <div class="dropdown-content">
                         <a href="veg.html">Vegetables</a>
                         <a href="dairy.html">Dairy</a>
@@ -45,10 +46,11 @@
             <li><a href="loyalty.html">Loyalty Registration</a></li>
         </ul>
         <div class="search">
-            <input type="text" placeholder="Search your daily groceries">
+            <label for="search-input" class="sr-only">Search:</label>
+            <input id="search-input" type="text" placeholder="Search your daily groceries">
             <button type="button">Search</button>
-          </div>
-    </nav>
+        </div>
+      </nav>
     <br>
     <picture class="banner">
         <source media="(max-width:600px)" srcset="veg.jpg">
@@ -104,8 +106,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown1"> </label>
-                        <select id="myDropdown1">
+                        <label for="quantity1" class="sr-only">Select Quantity for Brinjal</label>
+                        <select id="quantity1">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -114,7 +116,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/bitter-gourd.jpeg" alt="Bitter Gourd">
             <div class="product-info">
@@ -130,8 +132,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown2"> </label>
-                        <select id="myDropdown2">
+                        <label for="quantity2" class="sr-only">Select Quantity for Bitter Gourd</label>
+                        <select id="quantity2">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -140,7 +142,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/carrot.jpg" alt="Carrot">
             <div class="product-info">
@@ -156,8 +158,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown3"> </label>
-                        <select id="myDropdown3">
+                        <label for="quantity3" class="sr-only">Select Quantity for Carrot</label>
+                        <select id="quantity3">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -166,7 +168,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/cauliflower.jpg" alt="Cauliflower">
             <div class="product-info">
@@ -182,8 +184,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown4"> </label>
-                        <select id="myDropdown4">
+                        <label for="quantity4" class="sr-only">Select Quantity for Cauliflower</label>
+                        <select id="quantity4">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -192,7 +194,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/cucumber.jpg" alt="Cucumber">
             <div class="product-info">
@@ -208,8 +210,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown5"> </label>
-                        <select id="myDropdown5">
+                        <label for="quantity5" class="sr-only">Select Quantity for Cucumber</label>
+                        <select id="quantity5">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -218,7 +220,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/pumpkin.jpg" alt="Pumpkin">
             <div class="product-info">
@@ -234,8 +236,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown6"> </label>
-                        <select id="myDropdown6">
+                        <label for="quantity6" class="sr-only">Select Quantity for Pumpkin</label>
+                        <select id="quantity6">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -244,7 +246,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/potato.jpg" alt="Potato">
             <div class="product-info">
@@ -260,8 +262,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown7"> </label>
-                        <select id="myDropdown7">
+                        <label for="quantity7" class="sr-only">Select Quantity for Potato</label>
+                        <select id="quantity7">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -270,7 +272,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/ladiesfinger.jpg" alt="Ladies Finger">
             <div class="product-info">
@@ -286,8 +288,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown8"> </label>
-                        <select id="myDropdown8">
+                        <label for="quantity8" class="sr-only">Select Quantity for Ladies Finger</label>
+                        <select id="quantity8">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -296,7 +298,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="product-card">
             <img src="images/veg/onion.jpg" alt="Onion">
             <div class="product-info">
@@ -312,8 +314,8 @@
                 <div class="buttons">
                     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                     <div class="dropdown">
-                        <label for="myDropdown9"> </label>
-                        <select id="myDropdown9">
+                        <label for="quantity9" class="sr-only">Select Quantity for Onion</label>
+                        <select id="quantity9">
                             <option>100g</option>
                             <option>500g</option>
                             <option>1 kg</option>
@@ -322,8 +324,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </div>    
   <!--Footer section-->
   <footer>
     <section class="footer">

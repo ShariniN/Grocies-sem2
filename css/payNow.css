@@ -138,6 +138,17 @@ input[type="checkbox"] {
     color: rgb(3, 3, 3);
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
 @media (max-width: 920px) {
     .menu-btn {
         display: block;
@@ -366,7 +377,7 @@ input[type="checkbox"] {
 .form-navigation button {
   padding: 10px 20px;
   border: none;
-  background: #28a745;
+  background: #004e12;
   color: white;
   border-radius: 4px;
   cursor: pointer;

@@ -18,45 +18,46 @@
     <header>
         <!-- Navigation bar -->
         <nav>
-            <div>
-                <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
-            </div>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-                <li>
-                    <div class="dropdown">
+          <div>
+              <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+          </div>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+              <span class="sr-only">Menu</span>
+          </label>
+          <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="Aboutus.html">About Us</a></li>
+              <li>
+                  <div class="dropdown">
                       <a class="dropbtn" href="Products.html">Products</a>
-                        <div class="dropdown-content">
-                            <a href="veg.html">Vegetables</a>
-                            <a href="dairy.html">Dairy</a>
-                            <a href="cosmetics.html">Cosmetics</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a class="active" href="orders.html">Orders</a></li>
-                <li><a href="loyalty.html">Loyalty Registration</a></li>
-            </ul>
-            <div class="search">
-                <label for="search-box"></label>
-                <input type="text" id="search-box" placeholder="Search your daily groceries">
-                <button type="button">Search</button>
-            </div>
+                      <div class="dropdown-content">
+                          <a href="veg.html">Vegetables</a>
+                          <a href="dairy.html">Dairy</a>
+                          <a href="cosmetics.html">Cosmetics</a>
+                      </div>
+                  </div>
+              </li>
+              <li><a href="orders.html">Orders</a></li>
+              <li><a href="loyalty.html">Loyalty Registration</a></li>
+          </ul>
+          <div class="search">
+              <label for="search-input" class="sr-only">Search:</label>
+              <input id="search-input" type="text" placeholder="Search your daily groceries">
+              <button type="button">Search</button>
+          </div>
             <div class="cart-btn">
                 <span class="nav-icon">
-                    <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                    <i class="fas fa-cart-plus"></i>
                 </span>
-                <div class="cart-items" aria-live="polite"></div>
+                <div class="cart-items" ></div>
             </div>
         </nav>
         <br>
         <picture class="banner">
             <source media="(max-width:600px)" srcset="order.jpg" >
-            <img src="images/orders.jpg" alt="Orders banner displaying various groceries">
+            <img src="images/orders.jpg" alt="Orders banner">
         </picture>
     </header>
     <main>
@@ -66,39 +67,39 @@
             <!-- Fruits Section -->
             <div class="product-section-fruits">
                 <h2>Fruits</h2>
-                <div class="product-grid fruits-grid" aria-label="Fruits section"></div>
+                <div class="product-grid fruits-grid" ></div>
             </div>
             <!-- Vegetables Section -->
             <div class="product-section-vegetables">
                 <h2>Vegetables</h2>
-                <div class="product-grid vegetables-grid" aria-label="Vegetables section"></div>
+                <div class="product-grid vegetables-grid" ></div>
             </div>
             <!-- Meat & Seafood Section -->
             <div class="product-section-meat">
                 <h2>Meat & Seafood</h2>
-                <div class="product-grid meat-grid" aria-label="Meat and Seafood section"></div>
+                <div class="product-grid meat-grid" ></div>
             </div>
             <!-- Dairy Produce Section -->
             <div class="product-section-dairy">
                 <h2>Dairy Produce</h2>
-                <div class="product-grid dairy-grid" aria-label="Dairy Produce section"></div>
+                <div class="product-grid dairy-grid" ></div>
             </div>
             <!-- Baking & Cooking Ingredients Section -->
             <div class="product-section-baking">
                 <h2>Baking & Cooking Ingredients</h2>
-                <div class="product-grid baking-grid" aria-label="Baking and Cooking Ingredients section"></div>
+                <div class="product-grid baking-grid" ></div>
             </div>
         </div>
     </section>
 
     <!-- Cart Overlay -->
-    <div class="cart-overlay" role="dialog" aria-labelledby="cart-title" aria-modal="true">
+    <div class="cart-overlay">
         <div class="cart">
-            <span class="close-cart" aria-label="Close cart">
+            <span class="close-cart">
                 <i class="fa fa-window-close"></i>
             </span>
             <h2 id="cart-title">Your Cart</h2>
-            <div class="cart-content" aria-live="polite"></div>
+            <div class="cart-content" ></div>
             <div class="cart-footer">
                 <h3>Your total: LKR <span class="cart-total">0</span></h3>
                 <button class="clear-cart banner-btn">Clear Cart</button>
@@ -110,7 +111,7 @@
     </div>
 
     <!-- Popup Message -->
-    <div class="popup-message" role="alert" aria-live="assertive"></div>
+    <div class="popup-message"></div>
   </main>
   <!--Footer section-->
   <footer>
@@ -145,10 +146,10 @@
             <button type="submit">SUBSCRIBE</button>
           </form>
           <div class="icons">
-            <a href="https://www.facebook.com/" class="fa fa-facebook" title="Facebook logo" aria-label="Facebook"></a>
-            <a href="https://www.instagram.com/" class="fa fa-instagram" title="Instagram logo" aria-label="Instagram"></a>
-            <a href="https://twitter.com/" class="fa fa-twitter" title="Twitter logo" aria-label="Twitter"></a>
-            <a href="https://www.linkedin.com/" class="fa fa-linkedin" title="LinkedIn logo" aria-label="LinkedIn"></a>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" title="Facebook logo" ></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" title="Instagram logo" ></a>
+            <a href="https://twitter.com/" class="fa fa-twitter" title="Twitter logo" ></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin" title="LinkedIn logo" ></a>
           </div>
         </div>
       </div>

@@ -26,16 +26,16 @@
                 <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
             </div>
             <input type="checkbox" id="click">
-    <input type="checkbox" id="click">
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+                <span class="sr-only">Menu</span>
+            </label>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="Aboutus.html">About Us</a></li>
                 <li>
                     <div class="dropdown">
-                        <a class="dropbtn" class="active" href="Products.html">Products</a>
+                        <a class="dropbtn" href="Products.html">Products</a>
                         <div class="dropdown-content">
                             <a href="veg.html">Vegetables</a>
                             <a href="dairy.html">Dairy</a>
@@ -47,10 +47,11 @@
                 <li><a href="loyalty.html">Loyalty Registration</a></li>
             </ul>
             <div class="search">
-                <input type="text" placeholder="Search your daily groceries">
+                <label for="search-input" class="sr-only">Search:</label>
+                <input id="search-input" type="text" placeholder="Search your daily groceries">
                 <button type="button">Search</button>
             </div>
-        </nav>
+          </nav>
         <br>
         <picture class="banner">
             <source media="(max-width: 600px)" srcset="images/dairy.jpg">
@@ -64,244 +65,252 @@
         Looking for fresh, delicious dairy products to fuel your family? Then look no further! We're proud to offer a wide selection of high-quality dairy products and all your grocery needs under one roof. From fresh milk and creamy yogurt to delicious cheese and flavorful butter, we have everything to keep your fridge stocked with your favorite dairy essentials.
     </p>
     <br>
-    <!-- Dairy Products -->
-    <h2>Milk</h2>
-    <br>
-    <div class="product-container">
-        <div class="product-card">
-            <img src="images/dairy/milk.jpg" alt="Milk Carton">
-            <div class="product-info">
-                <h4>Milk Carton</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 1550</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown1">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="images/dairy/milkpowder.jpeg" alt="Milk Powder">
-            <div class="product-info">
-                <h4>Milk Powder</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 1200</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown2">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="images/dairy/babymilk.jpeg" alt="Baby Milk Powder">
-            <div class="product-info">
-                <h4>Baby Milk Powder</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 2500</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown3">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <h2>Ice Cream</h2>
-    <br>
-    <div class="product-container">
-        <div class="product-card">
-            <img src="images/dairy/chocicecream.jpg" alt="Chocolate Ice Cream">
-            <div class="product-info">
-                <h4>Chocolate Ice Cream</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 780</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown4">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="images/dairy/vanillaicecream.jpg" alt="Vanilla Ice Cream">
-            <div class="product-info">
-                <h4>Vanilla Ice Cream</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 670</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown5">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="images/dairy/strawberryicecream.jpg" alt="Strawberry Ice Cream">
-            <div class="product-info">
-                <h4>Strawberry Ice Cream</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 960</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown6">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
+<!-- Dairy Products -->
+<h2>Milk</h2>
+<br>
+<div class="product-container">
+    <div class="product-card">
+        <img src="images/dairy/milk.jpg" alt="Milk Carton">
+        <div class="product-info">
+            <h4>Milk Carton</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 1550</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-milk" class="sr-only">Select quantity for Milk Carton</label>
+                    <select id="quantity-milk">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2>Yogurt</h2>
-    <br>
-    <div class="product-container">
-        <div class="product-card">
-            <img src="images/dairy/yogurt.jpg" alt="Strawberry Yogurt">
-            <div class="product-info">
-                <h4>Strawberry Yogurt</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 170</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown7">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
+    <div class="product-card">
+        <img src="images/dairy/milkpowder.jpeg" alt="Milk Powder">
+        <div class="product-info">
+            <h4>Milk Powder</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 1200</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-milkpowder" class="sr-only">Select quantity for Milk Powder</label>
+                    <select id="quantity-milkpowder">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="product-card">
-            <img src="images/dairy/mango-flavored-yogurt-125g_1.jpg" alt="Mango Yogurt">
-            <div class="product-info">
-                <h4>Mango Yogurt</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 210</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown8">
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
+    <div class="product-card">
+        <img src="images/dairy/babymilk.jpeg" alt="Baby Milk Powder">
+        <div class="product-info">
+            <h4>Baby Milk Powder</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 2500</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-babymilk" class="sr-only">Select quantity for Baby Milk Powder</label>
+                    <select id="quantity-babymilk">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <div class="product-card">
-            <img src="images/dairy/yogurt2.jpg" alt="Vanilla Yogurt">
-            <div class="product-info">
-                <h4>Vanilla Yogurt</h4>
-                <p class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <span class="price">LKR 150</span>
-                <div class="buttons">
-                    <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-                    <div class="dropdown">
-                        <select id="myDropdown9" >
-                            <option>1x1</option>
-                            <option>1x2</option>
-                            <option>1x3</option>
-                        </select>
-                    </div>
+<h2>Ice Cream</h2>
+<br>
+<div class="product-container">
+    <div class="product-card">
+        <img src="images/dairy/chocicecream.jpg" alt="Chocolate Ice Cream">
+        <div class="product-info">
+            <h4>Chocolate Ice Cream</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 780</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-chocicecream" class="sr-only">Select quantity for Chocolate Ice Cream</label>
+                    <select id="quantity-chocicecream">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
                 </div>
             </div>
         </div>
-    </div>  
-</main>
+    </div>
+
+    <div class="product-card">
+        <img src="images/dairy/vanillaicecream.jpg" alt="Vanilla Ice Cream">
+        <div class="product-info">
+            <h4>Vanilla Ice Cream</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 670</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-vanillaicecream" class="sr-only">Select quantity for Vanilla Ice Cream</label>
+                    <select id="quantity-vanillaicecream">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images/dairy/strawberryicecream.jpg" alt="Strawberry Ice Cream">
+        <div class="product-info">
+            <h4>Strawberry Ice Cream</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 960</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-strawberryicecream" class="sr-only">Select quantity for Strawberry Ice Cream</label>
+                    <select id="quantity-strawberryicecream">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Yogurt</h2>
+<br>
+<div class="product-container">
+    <div class="product-card">
+        <img src="images/dairy/yogurt.jpg" alt="Strawberry Yogurt">
+        <div class="product-info">
+            <h4>Strawberry Yogurt</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 170</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-strawberryyogurt" class="sr-only">Select quantity for Strawberry Yogurt</label>
+                    <select id="quantity-strawberryyogurt">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images/dairy/mango-flavored-yogurt-125g_1.jpg" alt="Mango Yogurt">
+        <div class="product-info">
+            <h4>Mango Yogurt</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 210</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-mangoyogurt" class="sr-only">Select quantity for Mango Yogurt</label>
+                    <select id="quantity-mangoyogurt">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images/dairy/yogurt2.jpg" alt="Vanilla Yogurt">
+        <div class="product-info">
+            <h4>Vanilla Yogurt</h4>
+            <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </p>
+            <span class="price">LKR 150</span>
+            <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                    <label for="quantity-vanillayogurt" class="sr-only">Select quantity for Vanilla Yogurt</label>
+                    <select id="quantity-vanillayogurt">
+                        <option>1x1</option>
+                        <option>1x2</option>
+                        <option>1x3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   <!--Footer section-->
   <footer>
     <section class="footer">

@@ -22,12 +22,12 @@
             <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
         </div>
         <input type="checkbox" id="click">
-          <input type="checkbox" id="click">
-          <label for="click" class="menu-btn">
+        <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
-          </label>
+            <span class="sr-only">Menu</span>
+        </label>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="Aboutus.html">About Us</a></li>
             <li>
                 <div class="dropdown">
@@ -43,10 +43,11 @@
             <li><a href="loyalty.html">Loyalty Registration</a></li>
         </ul>
         <div class="search">
-            <input type="text" placeholder="Search your daily groceries">
+            <label for="search-input" class="sr-only">Search:</label>
+            <input id="search-input" type="text" placeholder="Search your daily groceries">
             <button type="button">Search</button>
         </div>
-    </nav>
+      </nav>
     <br>
     <picture class="banner">
         <img src="images/PayNow!.jpg" alt="Pay now banner with payment instructions">

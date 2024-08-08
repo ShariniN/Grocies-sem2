@@ -21,31 +21,33 @@
       <!--Navigation bar-->
       <nav>
         <div>
-          <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+            <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
         </div>
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
-          <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
+            <span class="sr-only">Menu</span>
         </label>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Aboutus.html">About Us</a></li>
-          <li>
-            <div class="dropdown">
-              <a class="active" class="dropbtn" href="Products.html">Products</a>
-              <div class="dropdown-content">
-                <a href="veg.html">Vegetables</a>
-                <a href="dairy.html">Dairy</a>
-                <a href="cosmetics.html">Cosmetics</a>
-              </div>
-            </div>
-          </li>
-          <li><a href="orders.html">Orders</a></li>
-          <li><a href="loyalty.html">Loyalty Registration</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="Products.html">Products</a>
+                    <div class="dropdown-content">
+                        <a href="veg.html">Vegetables</a>
+                        <a href="dairy.html">Dairy</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="loyalty.html">Loyalty Registration</a></li>
         </ul>
         <div class="search">
-          <input type="text" placeholder="Search your daily groceries">
-          <button type="button">Search</button>
+            <label for="search-input" class="sr-only">Search:</label>
+            <input id="search-input" type="text" placeholder="Search your daily groceries">
+            <button type="button">Search</button>
         </div>
       </nav>
       <br>
@@ -74,11 +76,11 @@
               <div class="buttons">
                 <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                 <div class="dropdown">
-                  <label for="myDropdown1"></label>
+                  <label for="myDropdown1" class="sr-only">Select quantity for Eye Gel</label>
                   <select id="myDropdown1">
-                    <option>1x1</option>
-                    <option>1x2</option>
-                    <option>1x3</option>
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
                   </select>
                 </div>
               </div>
@@ -99,11 +101,11 @@
               <div class="buttons">
                 <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                 <div class="dropdown">
-                  <label for="myDropdown2"></label>
+                  <label for="myDropdown2" class="sr-only">Select quantity for Moisturizer</label>
                   <select id="myDropdown2">
-                    <option>1x1</option>
-                    <option>1x2</option>
-                    <option>1x3</option>
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
                   </select>
                 </div>
               </div>
@@ -124,11 +126,11 @@
               <div class="buttons">
                 <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                 <div class="dropdown">
-                  <label for="myDropdown3"></label>
+                  <label for="myDropdown3" class="sr-only">Select quantity for Cleanser</label>
                   <select id="myDropdown3">
-                    <option>1x1</option>
-                    <option>1x2</option>
-                    <option>1x3</option>
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
                   </select>
                 </div>
               </div>
@@ -151,11 +153,11 @@
               <div class="buttons">
                 <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                 <div class="dropdown">
-                  <label for="myDropdown4"></label>
+                  <label for="myDropdown4" class="sr-only">Select quantity for Facewash</label>
                   <select id="myDropdown4">
-                    <option>1x1</option>
-                    <option>1x2</option>
-                    <option>1x3</option>
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
                   </select>
                 </div>
               </div>
@@ -176,11 +178,11 @@
               <div class="buttons">
                 <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                 <div class="dropdown">
-                  <label for="myDropdown5"></label>
+                  <label for="myDropdown5" class="sr-only">Select quantity for The Ordinary</label>
                   <select id="myDropdown5">
-                    <option>1x1</option>
-                    <option>1x2</option>
-                    <option>1x3</option>
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
                   </select>
                 </div>
               </div>
@@ -201,11 +203,11 @@
               <div class="buttons">
                 <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
                 <div class="dropdown">
-                  <label for="myDropdown6"></label>
+                  <label for="myDropdown6" class="sr-only">Select quantity for Conditioner</label>
                   <select id="myDropdown6">
-                    <option>1x1</option>
-                    <option>1x2</option>
-                    <option>1x3</option>
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
                   </select>
                 </div>
               </div>
@@ -214,164 +216,164 @@
         </tr>
       </table>
       <!--Cosmetic Products-->
-<h2>Cosmetics</h2>
-<table>
-  <tr>
-    <td class="product-card">
-      <img src="images/cosmetics/eyeshadow.webp" alt="Eyeshadow product packaging">
-      <div class="product-info">
-        <h4>Eyeshadow</h4>
-        <p class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-        </p>
-        <p class="price">LKR 3500</p>
-        <div class="buttons">
-          <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-          <div class="dropdown">
-            <label for="myDropdown7"></label>
-            <select id="myDropdown7">
-              <option value="1">1x1</option>
-              <option value="2">1x2</option>
-              <option value="3">1x3</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </td>
-    <td class="product-card">
-      <img src="images/cosmetics/blush.jpg" alt="Blush product packaging">
-      <div class="product-info">
-        <h4>Blush</h4>
-        <p class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-        <p class="price">LKR 1150</p>
-        <div class="buttons">
-          <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-          <div class="dropdown">
-            <label for="myDropdown8"></label>
-            <select id="myDropdown8">
-              <option value="1">1x1</option>
-              <option value="2">1x2</option>
-              <option value="3">1x3</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </td>
-    <td class="product-card">
-      <img src="images/cosmetics/highlighter.jpg" alt="Highlighter product packaging">
-      <div class="product-info">
-        <h4>Highlighter</h4>
-        <p class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-        </p>
-        <p class="price">LKR 990</p>
-        <div class="buttons">
-          <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-          <div class="dropdown">
-            <label for="myDropdown9"></label>
-            <select id="myDropdown9">
-              <option value="1">1x1</option>
-              <option value="2">1x2</option>
-              <option value="3">1x3</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="product-card">
-      <img src="images/cosmetics/lipstick.jpg" alt="Lipstick product packaging">
-      <div class="product-info">
-        <h4>Lipstick</h4>
-        <p class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-        <p class="price">LKR 1230</p>
-        <div class="buttons">
-          <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-          <div class="dropdown">
-            <label for="myDropdown10"></label>
-            <select id="myDropdown10">
-              <option value="1">1x1</option>
-              <option value="2">1x2</option>
-              <option value="3">1x3</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </td>
-    <td class="product-card">
-      <img src="images/cosmetics/makeupset.jpeg" alt="Makeup Set product packaging">
-      <div class="product-info">
-        <h4>Makeup Set</h4>
-        <p class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-        <p class="price">LKR 5500</p>
-        <div class="buttons">
-          <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-          <div class="dropdown">
-            <label for="myDropdown11"></label>
-            <select id="myDropdown11">
-              <option value="1">1x1</option>
-              <option value="2">1x2</option>
-              <option value="3">1x3</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </td>
-    <td class="product-card">
-      <img src="images/cosmetics/eyeliner.jpg" alt="Eyeliner product packaging">
-      <div class="product-info">
-        <h4>Eyeliner</h4>
-        <p class="rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </p>
-        <p class="price">LKR 470</p>
-        <div class="buttons">
-          <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-          <div class="dropdown">
-            <label for="myDropdown12"></label>
-            <select id="myDropdown12">
-              <option value="1">1x1</option>
-              <option value="2">1x2</option>
-              <option value="3">1x3</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </td>
-  </tr>
-</table>
-</main>
+      <h2>Cosmetics</h2>
+      <table>
+        <tr>
+          <td class="product-card">
+            <img src="images/cosmetics/eyeshadow.webp" alt="Eyeshadow product packaging">
+            <div class="product-info">
+              <h4>Eyeshadow</h4>
+              <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </p>
+              <p class="price">LKR 3500</p>
+              <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                  <label for="myDropdown7" class="sr-only">Select quantity for Eyeshadow</label>
+                  <select id="myDropdown7">
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="product-card">
+            <img src="images/cosmetics/blush.jpg" alt="Blush product packaging">
+            <div class="product-info">
+              <h4>Blush</h4>
+              <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+              <p class="price">LKR 1150</p>
+              <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                  <label for="myDropdown8" class="sr-only">Select quantity for Blush</label>
+                  <select id="myDropdown8">
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="product-card">
+            <img src="images/cosmetics/highlighter.jpg" alt="Highlighter product packaging">
+            <div class="product-info">
+              <h4>Highlighter</h4>
+              <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </p>
+              <p class="price">LKR 990</p>
+              <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                  <label for="myDropdown9" class="sr-only">Select quantity for Highlighter</label>
+                  <select id="myDropdown9">
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="product-card">
+            <img src="images/cosmetics/lipstick.jpg" alt="Lipstick product packaging">
+            <div class="product-info">
+              <h4>Lipstick</h4>
+              <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+              <p class="price">LKR 1230</p>
+              <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                  <label for="myDropdown10" class="sr-only">Select quantity for Lipstick</label>
+                  <select id="myDropdown10">
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="product-card">
+            <img src="images/cosmetics/makeupset.jpeg" alt="Makeup Set product packaging">
+            <div class="product-info">
+              <h4>Makeup Set</h4>
+              <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+              <p class="price">LKR 5500</p>
+              <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                  <label for="myDropdown11" class="sr-only">Select quantity for Makeup Set</label>
+                  <select id="myDropdown11">
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="product-card">
+            <img src="images/cosmetics/eyeliner.jpg" alt="Eyeliner product packaging">
+            <div class="product-info">
+              <h4>Eyeliner</h4>
+              <p class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+              <p class="price">LKR 470</p>
+              <div class="buttons">
+                <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+                <div class="dropdown">
+                  <label for="myDropdown12" class="sr-only">Select quantity for Eyeliner</label>
+                  <select id="myDropdown12">
+                    <option value="1">1x1</option>
+                    <option value="2">1x2</option>
+                    <option value="3">1x3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </main>
 <!--Footer section-->
 <footer>
   <section class="footer">

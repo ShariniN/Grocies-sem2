@@ -60,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
         products.forEach((product) => {
             const div = document.createElement("div");
             div.classList.add("product");
+    
+            const labelForQuantity = `quantity-${product.id}`; // Unique id for the label
+    
             if (product.category === "vegetables" || product.category === "fruits" || product.category === "meat") {
                 div.innerHTML = `
                     <div class="img-container">
@@ -67,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <h3>${product.title}</h3>
                     <h4>LKR ${product.price} per kg</h4>
-                    <input type="number" class="quantity-input" data-id=${product.id} min="0.1" step="0.1" value="0.1"> kg
+                    <label for="${labelForQuantity}" class="sr-only">Quantity for ${product.title}</label>
+                    <input type="number" id="${labelForQuantity}" class="quantity-input" data-id=${product.id} min="0.1" step="0.1" value="0.1"> kg
                 `;
             } else {
                 div.innerHTML = `
@@ -76,12 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <h3>${product.title}</h3>
                     <h4>LKR ${product.price}</h4>
-                    <input type="number" class="quantity-input" data-id=${product.id} min="1" step="1" value="1">
+                    <label for="${labelForQuantity}" class="sr-only">Quantity for ${product.title}</label>
+                    <input type="number" id="${labelForQuantity}" class="quantity-input" data-id=${product.id} min="1" step="1" value="1">
                 `;
             }
             productSections[product.category].appendChild(div);
         });
     }
+    
 
     // Toggle cart visibility
     function toggleCart() {

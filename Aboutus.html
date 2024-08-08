@@ -23,31 +23,34 @@
       <nav>
         <div>
             <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
-          </div>
-          <input type="checkbox" id="click">
-          <input type="checkbox" id="click">
-          <label for="click" class="menu-btn">
-            <i class="fas fa-bars"></i>
-          </label>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="Aboutus.html">About Us</a></li>
-        <li><div class="dropdown">
-          <a class="dropbtn" href="Products.html">Products</a>
-          <div class="dropdown-content">
-            <a href="veg.html">Vegetables</a>
-            <a href="dairy.html">Dairy</a>
-            <a href="cosmetics.html">Cosmetics</a>
-          </div>
         </div>
-        <li><a href="orders.html">Orders</a></li>
-        <li><a href="loyalty.html">Loyalty Registration</a></li>
-      </ul>
-      <div class="search">
-        <input type="text" placeholder="Search your daily groceries">
-        <button type="button">Search</button>
-      </div>
-    </nav>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="Products.html">Products</a>
+                    <div class="dropdown-content">
+                        <a href="veg.html">Vegetables</a>
+                        <a href="dairy.html">Dairy</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+        <div class="search">
+            <label for="search-input" class="sr-only">Search:</label>
+            <input id="search-input" type="text" placeholder="Search your daily groceries">
+            <button type="button">Search</button>
+        </div>
+      </nav>
     <br>
     <picture class="banner">
       <source media="(max-width:600px)" srcset="about.jpg" loading="lazy">
