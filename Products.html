@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="offers,Supermarket,Grocies,product">
+    <meta name="keywords" content="offers,Supermarket,Groceries,product">
     <title>Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a Groceries website">
@@ -23,272 +23,283 @@
       <nav>
         <div>
           <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li>
+            <div class="dropdown">
+              <a class="active" class="dropbtn" href="Products.html">Products</a>
+              <div class="dropdown-content">
+                <a href="veg.html">Vegetables</a>
+                <a href="dairy.html">Dairy</a>
+                <a href="cosmetics.html">Cosmetics</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="loyalty.html">Loyalty Registration</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search your daily groceries">
+          <button type="button">Search</button>
+        </div>
+      </nav>
+      <picture class="banner">
+        <source media="(max-width:600px)" srcset="product.jpg">
+        <img src="images/product(2).jpg" alt="Products banner">
+      </picture>
+      <br><br><br>
+    </header>
+    <main>
+      <!--Vegetable Deals-->
+      <h2 class="veg">Vegetable Deals</h2>
+      <div class="scrollmenu">
+        <div class="product-cardveg">
+          <img src="images/veg/capsicum.jpeg" alt="Capsicum">
+          <div class="product-info">
+            <h4>Capsicum</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="price"><s>LKR 280</s></p>
+            <p class="price">LKR 250</p>
+            <div class="buttonsveg">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown">
+                <label for="myDropdown1"></label>
+                <select id="myDropdown1">
+                  <option>100g</option>
+                  <option>500g</option>
+                  <option>1 kg</option>
+                </select>
+              </div>
+            </div>
           </div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Aboutus.html">About Us</a></li>
-        <li><div class="dropdown">
-          <a class="active" class="dropbtn" href="Products.html">Products</a>
-          <div class="dropdown-content">
-            <a href="veg.html">Vegetables</a>
-            <a href="dairy.html">Dairy</a>
-            <a href="cosmetics.html">Cosmetics</a>
+        </div>
+
+        <div class="product-cardveg">
+          <img src="images/veg/bitter-gourd.jpeg" alt="Bitter Gourd">
+          <div class="product-info">
+            <h4>Bitter Gourd</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="price"><s>LKR 220</s></p>
+            <p class="price">LKR 180</p>
+            <div class="buttonsveg">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown">
+                <label for="myDropdown2"></label>
+                <select id="myDropdown2">
+                  <option>100g</option>
+                  <option>500g</option>
+                  <option>1 kg</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-        <li><a href="orders.html">Orders</a></li>
-        <li><a href="loyalty.html">Loyalty Registration</a></li>
-      </ul>
-      <div class="search">
-        <input type="text" placeholder="Search your daily groceries">
-        <button type="button">Search</button>
-      </div>
-    </nav>
-    <picture class="banner">
-      <source media="(max-width:600px)" srcset="product.jpg">
-      <img src="images/product(2).jpg" alt="Products banner">
-    </picture>
-    <br><br><br>
-  </header>
-  <main>
-  <!--Vegetable Deals-->
-  <h2 class="veg">Vegetable Deals</h2>
-<div class="scrollmenu">
-  <div class="product-cardveg">
-    <img src="images/veg/capsicum.jpeg" alt="Product Image">
-    <div class="product-info">
-      <h4>Capsicum</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <p class="price"><s>LKR 280</s></p>
-      <p class="price">LKR 250</p>
-      <div class="buttonsveg">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-         <div class="dropdown">
-        <select id="myDropdown1">
-          <option>100g</option>
-          <option>500g</option>
-          <option>1 kg</option>
-        </select>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="product-cardveg">
-    <img src="images/veg/bitter-gourd.jpeg" alt="Product Image">
-    <div class="product-info">
-      <h4>Bitter Gourd</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <p class="price"><s>LKR 220</s></p>
-      <p class="price">LKR 180</p>
-      <div class="buttonsveg">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-         <div class="dropdown">
-        <select id="myDropdown2">
-          <option>100g</option>
-          <option>500g</option>
-          <option>1 kg</option>
-        </select>
+        <div class="product-cardveg">
+          <img src="images/veg/carrot.jpg" alt="Carrot">
+          <div class="product-info">
+            <h4>Carrot</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="price"><s>LKR 260</s></p>
+            <p class="price">LKR 210</p>
+            <div class="buttonsveg">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown">
+                <label for="myDropdown3"></label>
+                <select id="myDropdown3">
+                  <option>100g</option>
+                  <option>500g</option>
+                  <option>1 kg</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="product-cardveg">
-    <img src="images/veg/carrot.jpg" alt="Product Image">
-    <div class="product-info">
-      <h4>Carrot</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <p class="price"><s>LKR 260</s></p>
-      <p class="price">LKR 210</p>
-      <div class="buttonsveg">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-         <div class="dropdown">
-        <select id="myDropdown3">
-          <option>100g</option>
-          <option>500g</option>
-          <option>1 kg</option>
-        </select>
+        <div class="product-cardveg">
+          <img src="images/veg/cucumber.jpg" alt="Cucumber">
+          <div class="product-info">
+            <h4>Cucumber</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="price"><s>LKR 320</s></p>
+            <p class="price">LKR 300</p>
+            <div class="buttonsveg">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown">
+                <label for="myDropdown4"></label>
+                <select id="myDropdown4">
+                  <option>100g</option>
+                  <option>500g</option>
+                  <option>1 kg</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="product-cardveg">
-    <img src="images/veg/cucumber.jpg" alt="Product Image">
-    <div class="product-info">
-      <h4>Cucumber</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <p class="price"><s>LKR 320</s></p>
-      <p class="price">LKR 300</p>
-      <div class="buttonsveg">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-         <div class="dropdown">
-        <select id="myDropdown4">
-          <option>100g</option>
-          <option>500g</option>
-          <option>1 kg</option>
-        </select>
+      <!--Dairy Deals-->
+      <h2 class="dairy">Dairy Deals</h2>
+      <div class="scrollmenu">
+        <div class="product-card-dairy">
+          <img src="images/dairy/milk.jpg" alt="Milk Carton">
+          <div class="product-info">
+            <h4>Milk Carton</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <span class="price"><s>LKR 1550</s></span><br>
+            <span class="price">LKR 1300</span>
+            <div class="buttons-dairy">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown-dairy">
+                <label for="myDropdown5"></label>
+                <select id="myDropdown5">
+                  <option>1x1</option>
+                  <option>1x2</option>
+                  <option>1x3</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!--Dairy Deals-->
-<h2 class="dairy">Dairy Deals</h2>
-<div class="scrollmenu">
-  <div class="product-card-dairy">
-    <img src="images/dairy/milk.jpg" alt="milk">
-    <div class="product-info">
-      <h4>Milk Carton</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <span class="price"><s>LKR 1550</s></span><br>
-      <span class="price">LKR 1300</span>
-      <div class="buttons-dairy">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-        <div class="dropdown-dairy">
-          <select id="myDropdown5">
-            <option>1x1</option>
-            <option>1x2</option>
-            <option>1x3</option>
-          </select>
+        <div class="product-card-dairy">
+          <img src="images/dairy/cheddar.jpg" alt="Cheese Block">
+          <div class="product-info">
+            <h4>Cheese</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <span class="price"><s>LKR 1300</s></span><br>
+            <span class="price">LKR 1100</span>
+            <div class="buttons-dairy">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown-dairy">
+                <label for="myDropdown6"></label>
+                <select id="myDropdown6">
+                  <option>1x1</option>
+                  <option>1x2</option>
+                  <option>1x3</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="product-card-dairy">
-    <img src="images/dairy/chocicecream.jpg" alt="Chocolate Ice-Cream">
-    <div class="product-info">
-      <h4>Chocolate Ice Cream</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <span class="price"><s>LKR 780</s></span><br>
-      <span class="price">LKR 700</span>
-      <div class="buttons-dairy">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-        <div class="dropdown-dairy">
-          <select id="myDropdown6">
-            <option>1x1</option>
-            <option>1x2</option>
-            <option>1x3</option>
-          </select>
+        <div class="product-card-dairy">
+          <img src="images/dairy/butter.jpg" alt="Butter Pack">
+          <div class="product-info">
+            <h4>Butter Pack</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <span class="price"><s>LKR 1450</s></span><br>
+            <span class="price">LKR 1200</span>
+            <div class="buttons-dairy">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown-dairy">
+                <label for="myDropdown7"></label>
+                <select id="myDropdown7">
+                  <option>1x1</option>
+                  <option>1x2</option>
+                  <option>1x3</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="product-card-dairy">
-    <img src="images/dairy/mango-flavored-yogurt-125g_1.jpg" alt="mango-flavored-yogurt">
-    <div class="product-info">
-      <h4>Mango Yogurt</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <span class="price"><s>LKR 210</s></span><br>
-      <span class="price">LKR 180</span>
-      <div class="buttons-dairy">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-        <div class="dropdown-dairy">
-          <select id="myDropdown7">
-            <option>1x1</option>
-            <option>1x2</option>
-            <option>1x3</option>
-          </select>
+        <div class="product-card-dairy">
+          <img src="images/dairy/yogurt.jpg" alt="Yogurt Pack">
+          <div class="product-info">
+            <h4>Yogurt Pack</h4>
+            <p class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <span class="price"><s>LKR 900</s></span><br>
+            <span class="price">LKR 750</span>
+            <div class="buttons-dairy">
+              <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+              <div class="dropdown-dairy">
+                <label for="myDropdown8"></label>
+                <select id="myDropdown8">
+                  <option>1x1</option>
+                  <option>1x2</option>
+                  <option>1x3</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="product-card-dairy">
-    <img src="images/dairy/butter.jpg" alt="butter">
-    <div class="product-info">
-      <h4>Butter</h4>
-      <p class="rating">
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-      </p>
-      <span class="price"><s>LKR 1350</s></span><br>
-      <span class="price">LKR 1250</span>
-      <div class="buttons-dairy">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-        <div class="dropdown-dairy">
-          <select id="myDropdown8">
-            <option>1x1</option>
-            <option>1x2</option>
-            <option>1x3</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!--Cosmetic Deals-->
 <h2 class="cosmetics">Cosmetic Deals</h2>
 <div class="scrollmenu">
-<div class="product-card-cos">
-<img src="images/cosmetics/cleanser.jpg" alt="Cleanser">
+  <div class="product-card-cos">
+    <img src="images/cosmetics/cleanser.jpg" alt="Cleanser">
     <div class="product-info">
       <h4>Cleanser</h4>
       <p class="rating">
         <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star"></span>
-    </p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </p>
       <p class="price"><s>LKR 3200</s></p>
       <p class="price">LKR 3000</p>
       <div class="buttons-cos">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+        <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
         <div class="dropdown-cos">
+          <label for="myDropdown9"></label>
           <select id="myDropdown9">
             <option>1x1</option>
             <option>1x2</option>
@@ -300,21 +311,22 @@
   </div>
 
   <div class="product-card-cos">
-    <img src="images/cosmetics/eyegel.webp" alt="eye gel">
+    <img src="images/cosmetics/eyegel.webp" alt="Eye Gel">
     <div class="product-info">
       <h4>Eye Gel</h4>
       <p class="rating">
         <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-    </p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </p>
       <p class="price"><s>LKR 1200</s></p>
       <p class="price">LKR 990</p>
       <div class="buttons-cos">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart" ></i></button>
+        <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
         <div class="dropdown-cos">
+          <label for="myDropdown10"></label>
           <select id="myDropdown10">
             <option>1x1</option>
             <option>1x2</option>
@@ -325,8 +337,8 @@
     </div>
   </div>
 
-      <div class="product-card-cos">
-        <img src="images/cosmetics/facewash.webp" alt="facewash">
+  <div class="product-card-cos">
+    <img src="images/cosmetics/facewash.webp" alt="Facewash">
     <div class="product-info">
       <h4>Facewash</h4>
       <p class="rating">
@@ -339,8 +351,9 @@
       <p class="price"><s>LKR 990</s></p>
       <p class="price">LKR 890</p>
       <div class="buttons-cos">
-        <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
+        <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
         <div class="dropdown-cos">
+          <label for="myDropdown11"></label>
           <select id="myDropdown11">
             <option>1x1</option>
             <option>1x2</option>
@@ -351,31 +364,32 @@
     </div>
   </div>
 
-<div class="product-card-cos">
-  <img src="images/cosmetics/conditioner.webp" alt="conditioner">
+  <div class="product-card-cos">
+    <img src="images/cosmetics/conditioner.webp" alt="Conditioner">
     <div class="product-info">
-    <h4>Conditioner</h4>
-    <p class="rating">
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <span class="fa fa-star"></span>
-    </p>
-     <p class="price"><s>LKR 1600</s></p>
-     <p class="price">LKR 1400</p>
-     <div class="buttons-cos">
-     <button>Add to Cart&nbsp; <i class="fa fa-shopping-cart"></i></button>
-     <div class="dropdown-cos">
-    <select id="myDropdown12">
-    <option>1x1</option>
-    <option>1x2</option>
-       <option>1x3</option>
-     </select>
-     </div>
+      <h4>Conditioner</h4>
+      <p class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </p>
+      <p class="price"><s>LKR 1600</s></p>
+      <p class="price">LKR 1400</p>
+      <div class="buttons-cos">
+        <button>Add to Cart&nbsp;<i class="fa fa-shopping-cart"></i></button>
+        <div class="dropdown-cos">
+          <label for="myDropdown12"></label>
+          <select id="myDropdown12">
+            <option>1x1</option>
+            <option>1x2</option>
+            <option>1x3</option>
+          </select>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
 </main>
 <!--Footer section-->
