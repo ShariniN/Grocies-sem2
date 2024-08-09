@@ -188,8 +188,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Handle Buy Now button click
     function handleBuyNow() {
-        localStorage.setItem('cart', JSON.stringify(cart));
-        window.location.href = 'PayNow.html';
+        if (cart.length === 0) {
+            displayPopupMessage("Your cart is empty! Add items before proceeding.");
+        } else {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.location.href = 'PayNow.html';
+        }
     }
 
     displayProducts(getProducts());
