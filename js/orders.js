@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const div = document.createElement("div");
             div.classList.add("product");
     
-            const labelForQuantity = `quantity-${product.id}`; // Unique id for the label
+            const labelForQuantity = `quantity-${product.id}`; 
     
             if (product.category === "vegetables" || product.category === "fruits" || product.category === "meat") {
                 div.innerHTML = `
@@ -89,13 +89,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
 
-    // Toggle cart visibility
+    //Cart visibility
     function toggleCart() {
         cartOverlay.classList.toggle("transparentBcg");
         cartDOM.classList.toggle("showCart");
     }
 
-    // Update the cart display
+    // Update the cart 
     function updateCart() {
         cartContent.innerHTML = "";
         cartTotal.innerText = cart.reduce((acc, item) => acc + item.price * item.amount, 0).toFixed(2);
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 3000);
     }
 
-    // Handle quantity input change for adding to cart and updating cart quantities
+    // Handle quantity input 
     function handleQuantityInput(event) {
         if (event.target.classList.contains("quantity-input")) {
             const id = event.target.dataset.id;
@@ -168,13 +168,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Add current cart items to favorites => local storage
+    // Add current cart items to favorites 
     function addToFavorites() {
         localStorage.setItem('favorites', JSON.stringify(cart));
         displayPopupMessage("Favorites added successfully!");
     }
 
-    // Apply favorites from local storage to cart
+    // Apply favorites from local storage 
     function applyFavorites() {
         const favorites = JSON.parse(localStorage.getItem('favorites'));
         if (favorites) {
