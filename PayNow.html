@@ -21,16 +21,13 @@
         <div>
             <img src="images/logo.png" alt="Grocies Supermarket Logo" class="logo">
         </div>
-        <!-- Hamburger Menu for Mobile View -->
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
             <span class="sr-only">Menu</span>
         </label>
-
-        <!-- Navigation Links -->
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="Aboutus.html">About Us</a></li>
             <li>
                 <div class="dropdown">
@@ -45,8 +42,6 @@
             <li><a href="orders.html">Orders</a></li>
             <li><a href="loyalty.html">Loyalty Registration</a></li>
         </ul>
-
-        <!-- Search Bar -->
         <div class="search">
             <label for="search-input" class="sr-only">Search:</label>
             <input id="search-input" type="text" placeholder="Search your daily groceries">
@@ -54,31 +49,27 @@
         </div>
       </nav>
     <br>
-    <!-- Banner Image -->
     <picture class="banner">
         <img src="images/PayNow!.jpg" alt="Pay now banner">
     </picture>
 </header>
-
 <main>
     <br>
     <div class="container">
-        <!-- Cart Section -->
         <section class="cart">
             <h2>Your Cart</h2>
             <div class="cart-content"></div>
-            <div class="cart-total" ></div>
+            <div class="cart-total"></div>
             <div class="delivery-summary">
                 <h3>Shipping To</h3>
                 <p id="summary-name"></p>
-                <p id="summary-address" ></p>
-                <p id="summary-email" ></p>
+                <p id="summary-address"></p>
+                <p id="summary-email"></p>
             </div>
         </section>
 
-        <!-- Form Section for Delivery and Payment Details -->
         <section class="form-container">
-            <form id="Form">
+            <form id="multiStepForm">
                 <div class="form-step active" id="formTitle">
                     <h2>Delivery Details</h2>
                     <div class="form-group">
@@ -105,7 +96,6 @@
                         <button type="button" id="nextBtn">Next</button>
                     </div>
                 </div>
-
                 <div class="form-step">
                     <h2>Payment Details</h2>
                     <div class="form-group">
@@ -123,14 +113,12 @@
                         <input type="text" id="cvv" name="cvv" required placeholder="123">
                         <div class="error" id="cvvError"></div>
                     </div>
-                    <!-- Navigation buttons: Previous and Submit -->
                     <div class="form-navigation">
                         <button type="button" id="prevBtn">Previous</button>
                         <button type="submit">Submit</button>
                     </div>
                 </div>
             </form>
-            <!-- Success Animation shown upon successful form submission -->
             <div class="success-animation">
                 <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                     <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
